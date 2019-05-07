@@ -1,0 +1,155 @@
+    .assets{
+    	display: grid;
+      grid-template-columns: auto auto;
+    }
+    .asset{
+    	  width: 75px;
+        height: 75px;
+        background-color: gainsboro;
+        border-radius: 5px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .asset img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #eee;
+      border-radius: 5px;
+    }
+  	.draw-pane{
+      margin-top: 15px;
+    	position: relative;
+      padding-top:65%;
+    }
+    
+    .draw-pane > div {
+    	position: absolute;
+    }
+    
+    .draw-pane .background-img{
+    	  position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        top: 0px;
+        left: 0px;
+    }
+
+    .dialog{
+      width: 100vw;
+      position: fixed;
+      height: 100vh;
+      top: 0px;
+      left: 0px;
+      background: #65636380;
+      display: none;
+      z-index: 1000;
+    }
+
+    .dialog.open{
+      display: block;
+    }
+
+    .dialog-scroll{
+      height: 100%;
+      overflow: auto;
+    }
+
+    .dialog-container{
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      box-shadow: 0px 0px 20px #3336;
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
+
+    .dialog-container .form{
+      margin: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .dialog-container .form.textarea{
+      align-items: top!important;
+    }
+
+    .dialog-container .form label{
+      width: 100px;
+    }
+
+    .dialog-container .form .input-form{
+      flex: 1;
+      border-radius: 5px;
+      border: 1px solid gainsboro;
+      padding: 6px;
+    }
+
+    .dialog-header{
+      position: absolute;
+      top: 0px;
+      height: 40px;
+      width: 100%;
+      padding-right: 10px;
+      border-bottom: 1px solid gainsboro;
+    }
+
+    .dialog-header .close{
+      user-select: none;
+      -moz-user-select: none;
+    }
+
+    .dialog-footer{
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 50px;
+      border-top: 1px solid gainsboro;
+      padding: 8px 15px;
+      text-align: right;
+    }
+
+    .dialog .dialog-footer .btn{
+      padding: 3px 10px;
+      min-width: 75px;
+      border-radius: 0px;
+      background: gainsboro;
+    }
+
+    .drag_drop_container {
+      display: flex;
+    }
+
+    .assets-container{
+      width: 180px;
+      margin-right: 20px;
+    }
+
+    .view-panel{
+      width: calc( 100% - 200px );
+    }
+
+    .asset-cover{
+      text-align: center;
+    }
+
+    .dialog-header .close{
+      position: absolute;
+      right: 10px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .dialog-footer .btn{
+      box-shadow: none!important;
+    }
+
+    .dialog-content label{
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+    }

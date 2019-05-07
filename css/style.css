@@ -1,0 +1,137 @@
+	.dd_form{
+		max-width: 450px;
+	}
+
+	.dd_form .input-form{
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.dd_form .input-form.a-top{
+		align-items: unset!important;
+	}
+
+	.dd_form .input-form label{
+		width: 120px;
+	}
+
+	.dd_form .input-form input{
+		flex: 1;
+		border-radius: 5px;
+		padding: 5px;
+		border: 1px solid gainsboro;
+	}
+	.image-selector{
+		width: 125px;
+
+		height: 125px;
+
+		background: white;
+
+		border-radius: 5px;
+
+		border: 1px solid gainsboro;
+	}
+
+	.image-selector input[type="file"]{
+		display: none;
+	}
+
+	.image-selector img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 5px;
+		display: none;
+	}
+
+	.image-selector img.active{
+		display: block;
+	}
+
+	.image-lists{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: calc( 100% - 300px );
+		float: right;
+	}
+
+	.image-lists .image{
+		width: 200px;
+		overflow: hidden;
+		margin: 10px 10px 10px 0px;
+		height: 225px;
+		position: relative;
+	}
+
+	.image-lists .image .remove{
+		width: 70px;
+		height: 25px;
+		position: absolute;
+		top: 3px;
+		right: 3px;
+		background: orange;
+		border: none;
+		border-radius: 5px;
+	}
+
+	.image-lists .image img{
+		width: 100%;
+		height: 200px;
+		border-radius: 5px;
+		border: 1px solid gainsboro;
+		box-sizing: border-box;
+	}
+
+	button, input[type='submit']{
+		background-color: #0076ff;
+
+		border: none;
+
+		color: white;
+
+		border-radius: 5px;
+
+		padding: 5px;
+
+		min-width: 80px;
+
+		margin-right:5px;
+	}
+
+	.dd_form{
+		float: left;
+	}
+
+	.element-list {
+
+	    float: right;
+	    width: calc( 100% - 515px);
+	    margin-right: 15px;
+
+	}
+
+	.element {
+
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center;
+	    padding: 5px;
+	    border: 1px solid gainsboro;
+	    margin-top: -1px;
+
+	}
+
+	.element img{
+		width: 75px;
+
+		height: 60px;
+	}
+
+	.element span{
+		flex: 1;
+
+		padding-left: 15px;
+	}
