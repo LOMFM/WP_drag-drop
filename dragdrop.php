@@ -30,9 +30,9 @@ function dd_plugin_activate() {
 
     $sql_bg_table = "CREATE TABLE IF NOT EXISTS `$bg_table_name` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
-      `title` varchar(11) NOT NULL,
-      `url` varchar(255) NOT NULL,
-      `target` varchar(255) NOT NULL,
+      `title` varchar(255) NOT NULL,
+      `url` varchar(511) NOT NULL,
+      `target` varchar(511) NOT NULL,
       PRIMARY KEY (`id`)
     ) $charset_collate;";
     require_once ABSPATH . 'wp-admin/includes/upgrade.php';
@@ -41,9 +41,9 @@ function dd_plugin_activate() {
     $sql_elements_table = "CREATE TABLE IF NOT EXISTS `$element_table_name` (
       `id` int(11) NOT NULL AUTO_INCREMENT,
       `title` varchar(255) NOT NULL,
-      `url` varchar(255) NOT NULL,
-      `target` varchar(255) NOT NULL,
-      `fields` varchar(255) NOT NULL,
+      `url` varchar(511) NOT NULL,
+      `target` varchar(511) NOT NULL,
+      `fields` varchar(511) NOT NULL,
       PRIMARY KEY (`id`)
     ) $charset_collate;";
     require_once ABSPATH . 'wp-admin/includes/upgrade.php';
